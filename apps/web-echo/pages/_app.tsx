@@ -7,7 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
       <Head>
-        <title>Echo</title>
+        <title>Welcome to web-echo!</title>
       </Head>
       <Stack height="100vh" justifyContent="space-between">
         <Component {...pageProps} />
