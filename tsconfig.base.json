@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-sample/is-odd": ["libs/is-odd/src/index.ts"],
       "@nx-sample/ui/footer": ["libs/ui/footer/src/index.ts"]
     }
   },

@@ -6,6 +6,7 @@
 import express from 'express';
 import * as path from 'path';
 import cors from 'cors';
+import { isOdd } from '@nx-sample/is-odd';
 
 const messages: string[] = [];
 
@@ -22,14 +23,14 @@ app.get('/api', (req, res) => {
 
 app.post('/api/echo', (req, res) => {
   if (typeof req.body.message !== 'string') {
-    console.log(req.body);
     
     res.status(400).send({ messages, error: 'Invalid message' });
     return;
   }
-//formatted time
+
 const date = new Date();
 const time = date.toLocaleTimeString();
+ console.log(isOdd(2));
   messages.push(`[${time}] ${req.body.message}`);
   res.send({ messages });
 });

@@ -20,6 +20,7 @@
       }
     },
     "serve": {
+      "dependsOn": ["^build"],
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {

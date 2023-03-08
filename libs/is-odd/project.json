@@ -1,0 +1,26 @@
+{
+  "name": "is-odd",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/is-odd/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/is-odd",
+        "main": "libs/is-odd/src/index.ts",
+        "tsConfig": "libs/is-odd/tsconfig.lib.json",
+        "assets": ["libs/is-odd/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/is-odd/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

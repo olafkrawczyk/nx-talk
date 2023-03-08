@@ -4,7 +4,7 @@ export const UiFooter = () => {
   return (
     <Stack alignSelf="center" pb={16}>
       <Container>
-        <Text textAlign="center" fontSize="sm">
+        <Text textAlign="center" fontSize="sm" color="silver">
           Copyrights © The Echo 2023
         </Text>
       </Container>
