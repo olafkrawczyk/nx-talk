@@ -8,7 +8,7 @@ paginate: true
 # Nx intro
 ### Olaf Krawczyk
 
-09.02.2023
+09.03.2023
 
 ---
 # Agenda
@@ -19,8 +19,7 @@ paginate: true
 5. Łatwiejszy lokalny development 
 6. Automatyczna aktualizacja zależności
 7. Szybszy CI
-8. Graf projektu
-9. Minusy Nx
+8. Minusy Nx
 
 ---
 # 1. Monorepo
@@ -47,10 +46,10 @@ paginate: true
 
 ## 3. Współdzielenie kodu
 
-
-- podział *apps* i *libs*,
+- główny katalog
 - globalny `package.json`,
 - globalne konfiguracje TS, ESLint, Prettier, etc.
+- podział *apps* i *libs*,
 
 ##### *integrated repo*
 
@@ -66,8 +65,8 @@ paginate: true
 # 5. Łatwiejszy lokalny development 
 
 - `nx run-many --target=[lint|serve|build]`
+- caching wyników build, test etc.
 - szybszy od `docker-compose`
-- caching zadań
 
 ---
 
@@ -87,16 +86,11 @@ paginate: true
 
 ---
 
-# 8. Graf projektu
-![width:500px](graph.png)
-
----
-
-# 9. Minusy Nx
+# 8. Minusy Nx
 - krzywa uczenia
 - kolejne narzędzie w projekcie
 - zależność od pluginów Nx 
-- płatne fajerwerki - NxCloud
+- NxCloud kosztuje 💸 (500h w miesiącu za darmo)
 - relatywne importy, aliasy tylko dla Nx 
 
 ---
